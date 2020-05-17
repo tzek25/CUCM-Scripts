@@ -1,0 +1,492 @@
+***********************************************************************************************************************************************
+
+-------------------- utils reset_ui_administrator_password --------------------
+
+
+Reset user interface password
+2020-03-07 09:37:18,287 ERROR [ClassExecutionThread] cli.cmdResetPasswd - Error:: Unable to set Passwd
+2020-03-07 09:37:18,288 ERROR [ClassExecutionThread] cli.cmdResetPasswd - Error:: 03/07/2020 09:37:18.280 : Update FAILED: code = 28, PASSWORD TOO SIMILAR
+
+
+Executed command unsuccessfully
+
+admin:show status
+
+Host Name          : PHRCNXCMT1
+Date               : Sat Mar 7, 2020 11:37:19
+Time Zone          : Philippines Time (Asia/Manila)
+Locale             : en_US.UTF-8
+Product Ver        : 11.5.1.12900-21
+Unified OS Version : 6.0.0.0-2
+
+Uptime:
+ 11:37:20 up 149 days,  1:27,  2 users,  load average: 1.23, 0.38, 0.26
+
+CPU Idle:   94.39%  System:   02.04%    User:   01.53%
+  IOWAIT:   01.53%     IRQ:   00.00%    Soft:   00.51%
+
+Memory Total:        5994004K
+        Free:         168764K
+        Used:        5825240K
+      Cached:        1895808K
+      Shared:         256176K
+     Buffers:         340924K
+
+                        Total            Free            Used
+Disk/active         20061388K        7091436K       12766136K (65%)
+Disk/inactive       20061452K        7154156K       12703480K (64%)
+Disk/logging        81259120K       28717036K       48347784K (63%)
+
+
+admin:utils dbreplication runtimestate
+
+
+Runtime state cannot be performed on a cluster with a single active node; aborting operation
+
+
+ 
+admin:utils service list
+
+Requesting service status, please wait...
+System SSH [STARTED]
+Cluster Manager [STARTED]
+Name Service Cache [STOPPED] Service Not Activated
+Entropy Monitoring Daemon [STARTED]
+Cisco SCSI Watchdog [STARTED]
+Service Manager [STARTED]
+HTTPS Configuration Download [STARTED]
+Service Manager is running
+Getting list of all services
+>> Return code = 0
+A Cisco DB[STARTED]
+A Cisco DB Replicator[STARTED]
+Cisco AMC Service[STARTED]
+Cisco AXL Web Service[STARTED]
+Cisco Audit Event Service[STARTED]
+Cisco Bulk Provisioning Service[STARTED]
+Cisco CAR DB[STARTED]
+Cisco CAR Scheduler[STARTED]
+Cisco CAR Web Service[STARTED]
+Cisco CDP[STARTED]
+Cisco CDP Agent[STARTED]
+Cisco CDR Agent[STARTED]
+Cisco CDR Repository Manager[STARTED]
+Cisco CTIManager[STARTED]
+Cisco CTL Provider[STARTED]
+Cisco CallManager[STARTED]
+Cisco CallManager Admin[STARTED]
+Cisco CallManager SNMP Service[STARTED]
+Cisco CallManager Serviceability[STARTED]
+Cisco CallManager Serviceability RTMT[STARTED]
+Cisco Certificate Authority Proxy Function[STARTED]
+Cisco Certificate Change Notification[STARTED]
+Cisco Certificate Expiry Monitor[STARTED]
+Cisco Change Credential Application[STARTED]
+Cisco DHCP Monitor Service[STARTED]
+Cisco DRF Local[STARTED]
+Cisco DRF Master[STARTED]
+Cisco Database Layer Monitor[STARTED]
+Cisco Dialed Number Analyzer[STARTED]
+Cisco Dialed Number Analyzer Server[STARTED]
+Cisco DirSync[STARTED]
+Cisco Directory Number Alias Lookup[STARTED]
+Cisco Directory Number Alias Sync[STARTED]
+Cisco E911[STARTED]
+Cisco ELM Client Service[STARTED]
+Cisco Extended Functions[STARTED]
+Cisco Extension Mobility[STARTED]
+Cisco Extension Mobility Application[STARTED]
+Cisco IP Manager Assistant[STARTED]
+Cisco IP Voice Media Streaming App[STARTED]
+Cisco Intercluster Lookup Service[STARTED]
+Cisco License Manager[STARTED]
+Cisco Location Bandwidth Manager[STARTED]
+Cisco Log Partition Monitoring Tool[STARTED]
+Cisco Prime LM Admin[STARTED]
+Cisco Prime LM DB[STARTED]
+Cisco Prime LM Server[STARTED]
+Cisco RIS Data Collector[STARTED]
+Cisco RTMT Reporter Servlet[STARTED]
+Cisco SOAP - CDRonDemand Service[STARTED]
+Cisco SOAP - CallRecord Service[STARTED]
+Cisco Serviceability Reporter[STARTED]
+Cisco Syslog Agent[STARTED]
+Cisco TAPS Service[STARTED]
+Cisco Tftp[STARTED]
+Cisco Tomcat[STARTED]
+Cisco Tomcat Stats Servlet[STARTED]
+Cisco Trace Collection Service[STARTED]
+Cisco Trace Collection Servlet[STARTED]
+Cisco Trust Verification Service[STARTED]
+Cisco UXL Web Service[STARTED]
+Cisco Unified Mobile Voice Access Service[STARTED]
+Cisco User Data Services[STARTED]
+Cisco WebDialer Web Service[STARTED]
+Cisco Wireless Controller Synchronization Service[STARTED]
+Host Resources Agent[STARTED]
+MIB2 Agent[STARTED]
+Platform Administrative Web Service[STARTED]
+SNMP Master Agent[STARTED]
+SOAP - Diagnostic Portal Database Service[STARTED]
+SOAP -Log Collection APIs[STARTED]
+SOAP -Performance Monitoring APIs[STARTED]
+SOAP -Real-Time Service APIs[STARTED]
+Self Provisioning IVR[STARTED]
+System Application Agent[STARTED]
+Cisco Prime LM Resource API[STOPPED]  Service Not Activated 
+Cisco Prime LM Resource Legacy API[STOPPED]  Service Not Activated 
+Primary Node =true
+
+admin:show network cluster
+146.44.9.184 PHRCNXCMT1  Publisher callmanager DBPub authenticated
+146.44.9.185 PHRCIMPLAB  Subscriber cups DBPub authenticated using TCP since Sat Oct 12 17:53:39 2019
+
+Server Table (processnode) Entries
+----------------------------------
+146.44.9.184 
+146.44.9.185 
+admin:show status
+
+Host Name          : PHRCNXCMT1
+Date               : Sat Mar 7, 2020 18:40:54
+Time Zone          : Philippines Time (Asia/Manila)
+Locale             : en_US.UTF-8
+Product Ver        : 11.5.1.12900-21
+Unified OS Version : 6.0.0.0-2
+
+Uptime:
+ 18:40:56 up 149 days,  8:31,  2 users,  load average: 0.71, 0.31, 0.16
+
+CPU Idle:   95.92%  System:   01.53%    User:   02.04%
+  IOWAIT:   00.00%     IRQ:   00.00%    Soft:   00.51%
+
+Memory Total:        5994004K
+        Free:         160920K
+        Used:        5833084K
+      Cached:        1894012K
+      Shared:         256148K
+     Buffers:         336616K
+
+                        Total            Free            Used
+Disk/active         20061388K        7091344K       12766228K (65%)
+Disk/inactive       20061452K        7154156K       12703480K (64%)
+Disk/logging        81259120K       28692924K       48371896K (63%)
+
+
+admin:show network eth0
+Ethernet 0
+DHCP         : disabled           Status     : up
+IP Address   : 146.44.9.184       IP Mask    : 255.255.255.240
+Link Detected: yes                Mode       : Auto disabled, full, 100 Mbits/s
+Duplicate IP : no
+
+DNS
+Not configured.
+Gateway      : 146.44.9.177 on Ethernet 0
+
+
+admin:exit
+
+
+
+show status
+
+Host Name          : PHRCNXCMT1
+Date               : Sun Mar 8, 2020 15:04:43
+Time Zone          : Philippines Time (Asia/Manila)
+Locale             : en_US.UTF-8
+Product Ver        : 11.5.1.12900-21
+Unified OS Version : 6.0.0.0-2
+
+Uptime:
+ 15:04:45 up 150 days,  4:55,  2 users,  load average: 0.09, 0.07, 0.09
+
+CPU Idle:   93.33%  System:   02.05%    User:   01.54%
+  IOWAIT:   03.08%     IRQ:   00.00%    Soft:   00.00%
+
+Memory Total:        5994004K
+        Free:         115896K
+        Used:        5878108K
+      Cached:        1928624K
+      Shared:         256080K
+     Buffers:         358256K
+
+                        Total            Free            Used
+Disk/active         20061388K        7091388K       12766184K (65%)
+Disk/inactive       20061452K        7154156K       12703480K (64%)
+Disk/logging        81259120K       28692616K       48372204K (63%)
+
+
+admin:Chevr0n123
+
+Executed command unsuccessfully
+No valid command entered
+admin:show status
+
+Host Name          : PHRCNXCMT1
+Date               : Mon Mar 9, 2020 18:37:53
+Time Zone          : Philippines Time (Asia/Manila)
+Locale             : en_US.UTF-8
+Product Ver        : 11.5.1.13902-2
+Unified OS Version : 6.0.0.0-2
+
+Uptime:
+ 18:37:54 up  1:10,  1 user,  load average: 0.64, 0.25, 0.40
+
+CPU Idle:   90.82%  System:   01.53%    User:   07.65%
+  IOWAIT:   00.00%     IRQ:   00.00%    Soft:   00.00%
+
+Memory Total:        5994004K
+        Free:         143988K
+        Used:        5850016K
+      Cached:        1695544K
+      Shared:         390812K
+     Buffers:         133168K
+
+                        Total            Free            Used
+Disk/active         20061452K        7028092K       12829544K (65%)
+Disk/inactive       20061388K        7091668K       12765904K (65%)
+Disk/logging        81259120K       33143848K       43920972K (57%)
+
+
+admin:show status
+
+Host Name          : PHRCNXCMT1
+Date               : Mon Mar 9, 2020 19:06:13
+Time Zone          : Philippines Time (Asia/Manila)
+Locale             : en_US.UTF-8
+Product Ver        : 11.5.1.13902-2
+Unified OS Version : 6.0.0.0-2
+
+Uptime:
+ 19:06:14 up  1:39,  2 users,  load average: 0.64, 0.27, 0.23
+
+CPU Idle:   89.80%  System:   01.53%    User:   08.67%
+  IOWAIT:   00.00%     IRQ:   00.00%    Soft:   00.00%
+
+Memory Total:        5994004K
+        Free:         189184K
+        Used:        5804820K
+      Cached:        1573292K
+      Shared:         390816K
+     Buffers:         148036K
+
+                        Total            Free            Used
+Disk/active         20061452K        7028040K       12829596K (65%)
+Disk/inactive       20061388K        7091668K       12765904K (65%)
+Disk/logging        81259120K       33124200K       43940620K (58%)
+
+
+admin:show status
+
+Host Name          : PHRCNXCMT1
+Date               : Mon Mar 9, 2020 21:19:55
+Time Zone          : Philippines Time (Asia/Manila)
+Locale             : en_US.UTF-8
+Product Ver        : 11.5.1.13902-2
+Unified OS Version : 6.0.0.0-2
+
+Uptime:
+ 21:19:57 up  3:52,  1 user,  load average: 0.19, 0.19, 0.19
+
+CPU Idle:   91.84%  System:   03.06%    User:   05.10%
+  IOWAIT:   00.00%     IRQ:   00.00%    Soft:   00.00%
+
+Memory Total:        5994004K
+        Free:         216956K
+        Used:        5777048K
+      Cached:        1556948K
+      Shared:         391828K
+     Buffers:         197756K
+
+                        Total            Free            Used
+Disk/active         20061452K        7027952K       12829684K (65%)
+Disk/inactive       20061388K        7091668K       12765904K (65%)
+Disk/logging        81259120K       33021640K       44043180K (58%)
+
+
+admin:utils dnreplication runtimestate
+
+Executed command unsuccessfully
+No valid command entered
+admin:utils dbreplication runtimestate
+
+Server Time: Wed Mar 11 07:49:29 +08 2020
+
+Cluster Replication State: BROADCAST SYNC ended at: 2020-03-10-20-57
+     Sync Result: SYNC COMPLETED on 706 tables out of 706
+     Sync Status: All Tables are in sync
+     Use CLI to see detail: 'file view activelog cm/trace/dbl/20200310_205522_dbl_repl_output_Broadcast.log'
+
+DB Version: ccm11_5_1_13902_2
+
+Repltimeout set to: 300s
+PROCESS option set to: 1
+
+
+Cluster Detailed View from PHRCNXCMT1 (2 Servers):
+
+                                      PING      DB/RPC/   REPL.    Replication    REPLICATION SETUP
+SERVER-NAME         IP ADDRESS        (msec)    DbMon?    QUEUE    Group ID       (RTMT) & Details
+-----------         ----------        ------    -------   -----    -----------    ------------------
+PHRCNXCMT1          146.44.9.184      0.021     Y/Y/Y     0        (g_2)          (2) Setup Completed
+PHRCNXCMT2          146.44.9.186      0.163     Y/Y/Y     0        (g_4)          (2) Setup Completed
+ 
+
+
+ 
+admin:show network cluster
+146.44.9.184 PHRCNXCMT1  Publisher callmanager DBPub authenticated
+146.44.9.185 PHRCIMPLAB  Subscriber cups DBPub authenticated using TCP since Mon Mar 9 17:37:09 2020
+146.44.9.186 PHRCNXCMT2  Subscriber callmanager DBSub authenticated using TCP since Tue Mar 10 20:41:10 2020
+
+Server Table (processnode) Entries
+----------------------------------
+146.44.9.184 
+146.44.9.185 
+146.44.9.186 
+admin:utils dbreplication runtimestate
+
+Server Time: Fri Mar 20 17:48:04 +08 2020
+
+Cluster Replication State: BROADCAST SYNC ended at: 2020-03-10-20-57
+     Sync Result: SYNC COMPLETED on 706 tables out of 706
+     Sync Status: All Tables are in sync
+     Use CLI to see detail: 'file view activelog cm/trace/dbl/20200310_205522_dbl_repl_output_Broadcast.log'
+
+DB Version: ccm11_5_1_13902_2
+
+Repltimeout set to: 300s
+PROCESS option set to: 1
+
+
+Cluster Detailed View from PHRCNXCMT1 (2 Servers):
+
+                                      PING      DB/RPC/   REPL.    Replication    REPLICATION SETUP
+SERVER-NAME         IP ADDRESS        (msec)    DbMon?    QUEUE    Group ID       (RTMT) & Details
+-----------         ----------        ------    -------   -----    -----------    ------------------
+PHRCNXCMT1          146.44.9.184      0.026     Y/Y/Y     0        (g_2)          (2) Setup Completed
+PHRCNXCMT2          146.44.9.186      0.155     Y/Y/Y     0        (g_4)          (2) Setup Completed
+ 
+
+
+ 
+admin:show status
+
+Host Name          : PHRCNXCMT1
+Date               : Fri Mar 20, 2020 17:56:03
+Time Zone          : Philippines Time (Asia/Manila)
+Locale             : en_US.UTF-8
+Product Ver        : 11.5.1.13902-2
+Unified OS Version : 6.0.0.0-2
+
+Uptime:
+ 17:56:05 up 11 days, 29 min,  1 user,  load average: 0.30, 0.52, 0.45
+
+CPU Idle:   92.82%  System:   03.59%    User:   03.08%
+  IOWAIT:   00.00%     IRQ:   00.00%    Soft:   00.51%
+
+Memory Total:        5994004K
+        Free:         294388K
+        Used:        5699616K
+      Cached:        1518000K
+      Shared:         289856K
+     Buffers:         301496K
+
+                        Total            Free            Used
+Disk/active         20061452K        7022336K       12835300K (65%)
+Disk/inactive       20061388K        7091668K       12765904K (65%)
+Disk/logging        81259120K       29107936K       47956884K (63%)
+
+
+admin:0
+
+Executed command unsuccessfully
+No valid command entered
+admin:utils dbreplication runtimestate
+
+Server Time: Sat Mar 21 03:39:48 +08 2020
+
+Cluster Replication State: BROADCAST SYNC ended at: 2020-03-10-20-57
+     Sync Result: SYNC COMPLETED on 706 tables out of 706
+     Sync Status: All Tables are in sync
+     Use CLI to see detail: 'file view activelog cm/trace/dbl/20200310_205522_dbl_repl_output_Broadcast.log'
+
+DB Version: ccm11_5_1_13902_2
+
+Repltimeout set to: 300s
+PROCESS option set to: 1
+
+
+Cluster Detailed View from PHRCNXCMT1 (2 Servers):
+
+                                      PING      DB/RPC/   REPL.    Replication    REPLICATION SETUP
+SERVER-NAME         IP ADDRESS        (msec)    DbMon?    QUEUE    Group ID       (RTMT) & Details
+-----------         ----------        ------    -------   -----    -----------    ------------------
+PHRCNXCMT1          146.44.9.184      0.025     Y/Y/Y     0        (g_2)          (2) Setup Completed
+PHRCNXCMT2          146.44.9.186      0.150     Y/Y/Y     0        (g_4)          (2) Setup Completed
+ 
+
+
+ 
+admin:show status
+
+Host Name          : PHRCNXCMT1
+Date               : Wed Apr 15, 2020 09:28:02
+Time Zone          : Philippines Time (Asia/Manila)
+Locale             : en_US.UTF-8
+Product Ver        : 11.5.1.13902-2
+Unified OS Version : 6.0.0.0-2
+
+Uptime:
+ 09:28:04 up 36 days, 16:01,  1 user,  load average: 0.46, 0.36, 0.24
+
+CPU Idle:   89.80%  System:   04.59%    User:   05.61%
+  IOWAIT:   00.00%     IRQ:   00.00%    Soft:   00.00%
+
+Memory Total:        5994004K
+        Free:         216068K
+        Used:        5777936K
+      Cached:        1796408K
+      Shared:         242536K
+     Buffers:         355860K
+
+                        Total            Free            Used
+Disk/active         20061452K        7011172K       12846464K (65%)
+Disk/inactive       20061388K        7091668K       12765904K (65%)
+Disk/logging        81259120K       25691368K       51373452K (67%)
+
+
+admin:Chevr0n123
+
+Executed command unsuccessfully
+No valid command entered
+admin:show status
+
+Host Name          : PHRCNXCMT1
+Date               : Wed Apr 15, 2020 10:48:42
+Time Zone          : Philippines Time (Asia/Manila)
+Locale             : en_US.UTF-8
+Product Ver        : 11.5.1.13902-2
+Unified OS Version : 6.0.0.0-2
+
+Uptime:
+ 10:48:44 up 36 days, 17:21,  1 user,  load average: 0.42, 0.31, 0.23
+
+CPU Idle:   83.25%  System:   04.57%    User:   10.15%
+  IOWAIT:   02.03%     IRQ:   00.00%    Soft:   00.00%
+
+Memory Total:        5994004K
+        Free:         175964K
+        Used:        5818040K
+      Cached:        1841904K
+      Shared:         242560K
+     Buffers:         358660K
+
+                        Total            Free            Used
+Disk/active         20061452K        7011148K       12846488K (65%)
+Disk/inactive       20061388K        7091668K       12765904K (65%)
+Disk/logging        81259120K       25689808K       51375012K (67%)
+
+
+admin:

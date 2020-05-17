@@ -1,0 +1,19 @@
+utils reset_application_ui_administrator_name
+
+-------------------- utils reset_ui_administrator_name --------------------
+
+
+Reset user interface administrator user name
+
+New administrator user name: 
+Administrator user name has been successfully updated to 
+ PHRCNXCMT1 -- Administrator Name Changed to Administrator 2020-04-13 14:43:27.211887utils reset_application_ui_administrator_name
+
+-------------------- utils reset_ui_administrator_name --------------------
+
+
+Reset user interface administrator user name
+
+New administrator user name: 
+Administrator user name has been successfully updated to 
+ PHRCNXCMT1 -- Administrator Name Changed to CMAdministrator 2020-04-14 08:39:44.607052
